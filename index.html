@@ -14,6 +14,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Creative Industry Day</title>
+  <style>
+    .dropdown-menu {
+      width: 300px;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,12 +27,50 @@
     <div class="row justify-content-center">
       <header>
         <h1>RIT Creative Industry Day</h1>
-        <p>Please read the following instructions carefully before submitting your information.</p>
       </header>
     </div>
 
+    <hr>
+
     <!-- CONTROLS -->
-    <div class="row justify-content-center">
+    <div id="controls" class="row justify-content-center">
+      <button class="btn" type="button" id="addPortfolio">Add Portfolio</button>
+
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="filterButton" data-toggle="dropdown">
+          Filter
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <p><strong>Year</strong></p>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="firstYearCheck">
+            <label class="form-check-label" for="dropdownCheck">First</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="secondYearCheck">
+            <label class="form-check-label" for="dropdownCheck">Second</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="thirdYearCheck">
+            <label class="form-check-label" for="dropdownCheck">Third</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="thirdYearCheck">
+            <label class="form-check-label" for="dropdownCheck">Fourth</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="filterButton" data-toggle="dropdown">
+          Sort By
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          
+        </div>
+      </div>
+
+      <button class="btn" type="button" id="reset">Reset</button>
     </div>
 
     <!-- GALLERY -->
@@ -35,11 +78,12 @@
       <!-- CARD -->
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card text-left">
-          <div class="card-header">
-            <h3>Card Header</h3>
-          </div>
           <div class="card-body">
             <p>Card body.</p>
+          </div>
+          <div class="card-footer">
+            <p class="name-text">Jason Streeter</p>
+            <p class="major-text">New Media Design, 4th Year</p>
           </div>
         </div>
       </div>
@@ -47,11 +91,12 @@
       <!-- CARD -->
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card text-left">
-          <div class="card-header">
-            <h3>Card Header</h3>
-          </div>
           <div class="card-body">
             <p>Card body.</p>
+          </div>
+          <div class="card-footer">
+            <p class="name-text">Jason Streeter</p>
+            <p class="major-text">New Media Design, 4th Year</p>
           </div>
         </div>
       </div>
@@ -59,11 +104,12 @@
       <!-- CARD -->
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card text-left">
-          <div class="card-header">
-            <h3>Card Header</h3>
-          </div>
           <div class="card-body">
             <p>Card body.</p>
+          </div>
+          <div class="card-footer">
+            <p class="name-text">Jason Streeter</p>
+            <p class="major-text">New Media Design, 4th Year</p>
           </div>
         </div>
       </div>
