@@ -252,14 +252,14 @@
                 const checkBox = document.createElement('input');
                 const label = document.createElement('label');
 
-                checkBox.class = 'form-check-input';
+                checkBox.className = 'form-check-input';
                 checkBox.type = 'checkbox';
                 const val = newInterest.replace(' ', '');
                 checkBox.value = `${val}`;
                 checkBox.checked = true;
 
-                label.class = 'form-check-label';
-                div.class = 'form-check form-check-inline';
+                label.className = 'form-check-label';
+                div.className = 'form-check form-check-inline';
 
                 const textnode = document.createTextNode(newInterest);     
 
