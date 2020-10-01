@@ -17,6 +17,278 @@
     <title>Creative Industry Day</title>
 </head>
 <body>
-    
+    <div class="container">
+        <!-- HEADER -->
+        <div class="row justify-content-center">
+            <header>
+                <h1>RIT Creative Industry Day</h1>
+                <p>Please read the following instructions carefully before submitting your information.</p>
+            </header>
+        </div>
+
+        <!-- CARD -->
+        <div class="row justify-content-center">
+            <div class="col-lg" id="info">
+                    <div class="card text-left">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs" id="options" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" role="tab" href="#profile">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" role="tab" href="#education">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" role="tab" href="#review">Review</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <form id="studentInfo">
+                                <div class="tab-content">
+
+                                    <!-- First Tab -->
+                                    <div class="tab-pane active" id="profile" role="tabpanel">
+                                        <div class="row">
+                                            <!-- preferred name -->
+                                            <div class="col-xs-1 col-md col-lg">
+                                                <div class="form-group">
+                                                    <label for="firstName">Preferred Name</label>
+                                                    <input type="text" class="form-control" id="firstName" placeholder="Enter name" value="Jane">
+                                                </div>
+                                            </div>
+                                            <!-- last name -->
+                                            <div class="col-xs-1 col-md col-lg">
+                                                <div class="form-group">
+                                                    <label for="lastName">Last Name</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="lastName" placeholder="Enter last name" value="Doe">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- email address -->
+                                            <div class="col-xs-1 col-md col-lg">
+                                                <div class="form-group">
+                                                    <label for="email">Email Address</label>
+                                                    <div class="input-group">
+                                                        <input type="email" class="form-control" id="email" placeholder="name@rit.edu" value="jd12344@rit.edu">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- portfolio link -->
+                                            <div class="col-xs-1 col-md col-lg">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Portfolio</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text" id="basic-addon2">http://</span>
+                                                        </div>
+                                                        <input type="url" class="form-control" id="kidWgt" placeholder="name.com" value="janeD.design">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- header image upload -->
+                                            <div class="col-xs-1 col-md col-lg">
+                                                <div class="form-group">
+                                                    <label for="img">Header Image</label>
+                                                    <div class="input-group">
+                                                        <p>258 pixels x 78 pixels</p>
+                                                        <input type="file" id="img" name="img" accept="image/jpeg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- image preview -->
+                                            <div class="col-xs-1 col-md col-lg">
+                                                <div class="form-group">
+                                                    <label for="preview">Preview</label>
+                                                    <div class="input-group">
+                                                        <img id="imgPreview" src="#" alt="your image" style="max-width: 258px; max-height: 78px;" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Second Tab -->
+                                    <div class="tab-pane" id="education" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-xs-1 col-md col-lg">
+                                                 <!-- Major -->
+                                                <div class="form-group">
+                                                    <label for="major">Major</label>
+                                                    <select class="form-control" id="major">
+                                                        <option value="3DDD">3D Digital Design (BFA)</option>
+                                                        <option value="APR">Advert and Public Relations (BS)</option>
+                                                        <option value="AAS">Applied Art and Sciences (BS)</option>
+                                                        <option value="CS">Computer Science (BS)</option>
+                                                        <option value="FAB">Film and Animation (BFA)</option>
+                                                        <option value="FABM">Film and Animation (MFA)</option>
+                                                        <option value="FAS">Fine Arts Studio (BFA)</option>
+                                                        <option value="GDDB">Game Design and Development (BS)</option>
+                                                        <option value="GDDM">Game Design and Development (MS)</option>
+                                                        <option value="GDB">Graphic Design (BFA)</option>
+                                                        <option value="HCC">Human-Centered Computing (BS)</option>
+                                                        <option value="ILL">Illustration (BFA)</option>
+                                                        <option value="IDB">Industrial Design (BFA)</option>
+                                                        <option value="IDM">Industrial Design (MFA)</option>
+                                                        <option value="ID">Interior Design (BFA</option>
+                                                        <option value="MI">Medical Illustration (BFA)</option>
+                                                        <option value="MPS">Motion Piction Science (BS)</option>
+                                                        <option value="NMD" selected>New Media Design (BFA)</option>
+                                                        <option value="NMID">New Media Interactive Development (BS)</option>
+                                                        <option value="PIA_AP">Photo and Imaging Arts - Ad Photo (BFA)</option>
+                                                        <option value="PIA_PJ">Photo and Imaging Arts - Photo Journal (BFA)</option>
+                                                        <option value="PIA_VM">Photo and Imaging Arts - Visual Media (BFA)</option>
+                                                        <option value="SE">Software Engineering (BS)</option>
+                                                        <option value="VCD">Visual Communication Design (BFA</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-1 col-md col-lg">
+                                                <!-- Year -->
+                                                <div class="form-group">
+                                                    <label for="year">Year</label>
+                                                    <select class="form-control" id="year">
+                                                        <option value="first">1st Year</option>
+                                                        <option value="second">2nd Year</option>
+                                                        <option value="third">3rd Year</option>
+                                                        <option value="fourth" selected>4th Year</option>
+                                                        <option value="fifth">5th Year</option>
+                                                        <option value="firstG">1st Year Grad</option>
+                                                        <option value="secondG">2nd Year Grad</option>
+                                                        <option value="thirdG">3rd Year Grad</option>
+                                                        <option value="fourthG">4th Year Grad</option>
+                                                        <option value="fifthG">5th Year Grad</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1 col-md col-lg">
+                                                <!-- Interests -->
+                                                <div class="form-group">
+                                                    <label for="interests">Interests</label>
+                                                    <div class="interests input-group">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" value="interactiondesign">
+                                                            <label class="form-check-label" for="inlineCheckbox1">interaction design</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" value="motiongraphics">
+                                                            <label class="form-check-label" for="inlineCheckbox2">motion graphics</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" value="frontenddevelopment" checked>
+                                                            <label class="form-check-label" for="inlineCheckbox3">front end development</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" value="wireframing">
+                                                            <label class="form-check-label" for="inlineCheckbox1">wireframing</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" value="motiondesign" checked>
+                                                            <label class="form-check-label" for="inlineCheckbox2">motion design</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" value="illustration">
+                                                            <label class="form-check-label" for="inlineCheckbox3">illustration</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" value="graphicdesign">
+                                                            <label class="form-check-label" for="inlineCheckbox3">graphic design</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="addInterest" name="addInterst" placeholder="Add interest">
+                                                        <div class="input-group-append">
+                                                            <button class="btn" type="button" id="add">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Third Tab -->
+                                    <div class="tab-pane" id="review" role="tabpanel">
+                                        <div class="form-group">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="row justify-content-center">
+                <footer>
+                    <p>Having Trouble? Contact Professor Adam Smith: adam.smith@rit.edu</p>
+                </footer>
+            </div>
+    </div>
+
+    <script>
+        //swap tabs
+        $('#options a').on('click', function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+
+        $('#add').on('click', function(e) {
+            const newInterest = document.getElementById('addInterest').value;
+            if(newInterest) {
+                /*  <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="MD" selected>
+                        <label class="form-check-label" for="inlineCheckbox2">motion design</label>
+                     </div>
+                */
+                const div = document.createElement('div');   
+                const checkBox = document.createElement('input');
+                const label = document.createElement('label');
+
+                checkBox.class = 'form-check-input';
+                checkBox.type = 'checkbox';
+                const val = newInterest.replace(' ', '');
+                checkBox.value = `${val}`;
+                checkBox.checked = true;
+
+                label.class = 'form-check-label';
+                div.class = 'form-check form-check-inline';
+
+                const textnode = document.createTextNode(newInterest);     
+
+                label.appendChild(textnode);         
+                div.appendChild(checkBox);
+                div.appendChild(label);
+
+                document.querySelector('.interests').appendChild(div); 
+                document.getElementById('addInterest').value = '';
+            }
+        });
+
+        //image preview
+        /* taken from: https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded */
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                
+                reader.onload = function (e) {
+                    document.getElementById('imgPreview').src = e.target.result
+                }
+                
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        
+        $("#img").change(function(){
+            readURL(this);
+        });
+    </script>
 </body>
 </html>
