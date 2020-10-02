@@ -18,21 +18,49 @@
     #content {
       padding: 0 75px 0 75px;
     }
-    .dropdown-menu {
-      width: 300px;
+    #controls {
+      padding-bottom: 16px;
     }
     #controls, #filters {
       display: flex;
       justify-content: space-between;
     }
+    #gallery > div {
+      margin-bottom: 30px;
+    }
+    .card {
+      border-radius: 0;
+      background-color: lightgray;
+      height: 200px;
+    }
+    .card-body {
+      height: 100%;
+    }
+    .card-footer {
+      background-color: white;
+    }
     .btn {
       background-color: lightgray;
       border-radius: 0;
+      width: 125px;
+    }
+    .dropdown .btn {
+      background-color: white;
     }
     .btn:hover {
       background-color: #F76902; /* RIT ORANGE */
       color: white;
       transition: all 0.3s;
+    }
+    .dropdown-menu {
+      width: 300px;
+      padding: 10px 15px 15px 15px;
+    }
+    p {
+      margin-bottom: 5px;
+    }
+    p:last-child {
+      margin-bottom: 0;
     }
   </style>
 </head>
@@ -50,56 +78,58 @@
     <hr>
 
     <!-- CONTROLS -->
-    <div id="controls" class="row">
-      <button class="btn" type="button" id="addPortfolioButton">Add Portfolio</button>
+    <div class="row">
+      <div id="controls" class="col-12">
+        <button class="btn" type="button" id="addPortfolioButton">Add Portfolio</button>
 
-      <!-- Filters -->
-      <div id="filters">
-        <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" id="filterButton" data-toggle="dropdown">
-            Filter
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <p><strong>Year</strong></p>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="firstYearCheck">
-              <label class="form-check-label" for="dropdownCheck">First</label>
+        <!-- Filters -->
+        <div id="filters">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="filterButton" data-toggle="dropdown">
+              Filter
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <p><strong>Year</strong></p>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="firstYearCheck">
+                <label class="form-check-label" for="dropdownCheck">First</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="secondYearCheck">
+                <label class="form-check-label" for="dropdownCheck">Second</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="thirdYearCheck">
+                <label class="form-check-label" for="dropdownCheck">Third</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="thirdYearCheck">
+                <label class="form-check-label" for="dropdownCheck">Fourth</label>
+              </div>
             </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="secondYearCheck">
-              <label class="form-check-label" for="dropdownCheck">Second</label>
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="thirdYearCheck">
-              <label class="form-check-label" for="dropdownCheck">Third</label>
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="thirdYearCheck">
-              <label class="form-check-label" for="dropdownCheck">Fourth</label>
+          </div>
+    
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="filterButton" data-toggle="dropdown">
+              Sort By
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    
             </div>
           </div>
         </div>
-  
-        <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" id="filterButton" data-toggle="dropdown">
-            Sort By
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-  
-          </div>
-        </div>
+
+        <button class="btn" type="button" id="resetButton">Reset</button>
       </div>
-
-      <button class="btn" type="button" id="reset">Reset</button>
     </div>
 
     <!-- GALLERY -->
-    <div class="row justify-content-center">
+    <div id="gallery" class="row justify-content-center">
       <!-- CARD -->
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card text-left">
           <div class="card-body">
-            <p>Card body.</p>
+
           </div>
           <div class="card-footer">
             <p class="name-text">Mike Snyder</p>
@@ -112,7 +142,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card text-left">
           <div class="card-body">
-            <p>Card body.</p>
+
           </div>
           <div class="card-footer">
             <p class="name-text">Stephanie Liu</p>
@@ -125,7 +155,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card text-left">
           <div class="card-body">
-            <p>Card body.</p>
+
           </div>
           <div class="card-footer">
             <p class="name-text">Sierra Scott</p>
@@ -138,7 +168,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card text-left">
           <div class="card-body">
-            <p>Card body.</p>
+
           </div>
           <div class="card-footer">
             <p class="name-text">Jason Streeter</p>
@@ -151,7 +181,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card text-left">
           <div class="card-body">
-            <p>Card body.</p>
+
           </div>
           <div class="card-footer">
             <p class="name-text">Julia Hotaling</p>
@@ -164,7 +194,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card text-left">
           <div class="card-body">
-            <p>Card body.</p>
+
           </div>
           <div class="card-footer">
             <p class="name-text">Ben Middleton</p>
@@ -182,6 +212,14 @@
       // Add portfolio button click event
       $('#addPortfolioButton').on('click', (e) => {
         window.location.href = './portfolioAdd.html';
+      });
+
+      // Reset filters button event
+      $('#resetButton').on('click', (e) => {
+        const checkboxes = $('input.form-check-input');
+        for(const checkbox of checkboxes) {
+          checkbox.checked = false;
+        }
       });
 
     });
