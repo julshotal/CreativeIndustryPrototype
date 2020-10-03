@@ -341,7 +341,7 @@
                     
                     reader.onload = function (e) {
                         document.getElementById('imgPreview').src = e.target.result;
-                        document.getElementById('headerImg').css('background-image',`url(${e.target.result})`);;
+                        document.getElementById('headerImg').style.backgroundImage = ('url(' + e.target.result + ')');
                     }
                     
                     reader.readAsDataURL(input.files[0]);
