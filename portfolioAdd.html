@@ -10,7 +10,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
      
     <!--- normal stuff -->
-    
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -21,8 +21,8 @@
         <!-- HEADER -->
         <div class="row justify-content-center">
             <header>
-                <h1>RIT Creative Industry Day</h1>
-                <p>Please read the following instructions carefully before submitting your information.</p>
+              <h1>RIT Creative Industry Day</h1>
+              <p>Please read the following instructions carefully before submitting your information.</p>
             </header>
         </div>
 
@@ -30,8 +30,8 @@
         <div class="row justify-content-center">
             <div class="col-lg" id="info">
                     <div class="card text-left">
-                        <div class="card-header">
-                            <ul class="nav nav-tabs card-header-tabs" id="options" role="tablist">
+                        <div class="card-header" id="formCard">
+                            <ul class="nav nav-tabs nav-justified card-header-tabs" id="options" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="profileTab" role="tab" href="#profile">Profile</a>
                                 </li>
@@ -121,30 +121,30 @@
                                                 <div class="form-group">
                                                     <label for="major">Major</label>
                                                     <select class="form-control" id="major">
-                                                        <option value="3DDD">3D Digital Design (BFA)</option>
-                                                        <option value="APR">Advert and Public Relations (BS)</option>
-                                                        <option value="AAS">Applied Art and Sciences (BS)</option>
-                                                        <option value="CS">Computer Science (BS)</option>
-                                                        <option value="FAB">Film and Animation (BFA)</option>
-                                                        <option value="FABM">Film and Animation (MFA)</option>
-                                                        <option value="FAS">Fine Arts Studio (BFA)</option>
-                                                        <option value="GDDB">Game Design and Development (BS)</option>
-                                                        <option value="GDDM">Game Design and Development (MS)</option>
-                                                        <option value="GDB">Graphic Design (BFA)</option>
-                                                        <option value="HCC">Human-Centered Computing (BS)</option>
-                                                        <option value="ILL">Illustration (BFA)</option>
-                                                        <option value="IDB">Industrial Design (BFA)</option>
-                                                        <option value="IDM">Industrial Design (MFA)</option>
-                                                        <option value="ID">Interior Design (BFA</option>
-                                                        <option value="MI">Medical Illustration (BFA)</option>
-                                                        <option value="MPS">Motion Piction Science (BS)</option>
-                                                        <option value="NMD" selected>New Media Design (BFA)</option>
-                                                        <option value="NMID">New Media Interactive Development (BS)</option>
-                                                        <option value="PIA_AP">Photo and Imaging Arts - Ad Photo (BFA)</option>
-                                                        <option value="PIA_PJ">Photo and Imaging Arts - Photo Journal (BFA)</option>
-                                                        <option value="PIA_VM">Photo and Imaging Arts - Visual Media (BFA)</option>
-                                                        <option value="SE">Software Engineering (BS)</option>
-                                                        <option value="VCD">Visual Communication Design (BFA</option>
+                                                        <option value="3D Digital Design (BFA)">3D Digital Design (BFA)</option>
+                                                        <option value="Advert and Public Relations (BS)">Advert and Public Relations (BS)</option>
+                                                        <option value="Applied Art and Sciences (BS)">Applied Art and Sciences (BS)</option>
+                                                        <option value="Computer Science (BS)">Computer Science (BS)</option>
+                                                        <option value="Film and Animation (BFA)">Film and Animation (BFA)</option>
+                                                        <option value="Film and Animation (MFA)">Film and Animation (MFA)</option>
+                                                        <option value="Fine Arts Studio (BFA)">Fine Arts Studio (BFA)</option>
+                                                        <option value="Game Design and Development (BS">Game Design and Development (BS)</option>
+                                                        <option value="Game Design and Development (MS)">Game Design and Development (MS)</option>
+                                                        <option value="Graphic Design (BFA)">Graphic Design (BFA)</option>
+                                                        <option value="Human-Centered Computing (BS)">Human-Centered Computing (BS)</option>
+                                                        <option value="Illustration (BFA)">Illustration (BFA)</option>
+                                                        <option value="Industrial Design (BFA)">Industrial Design (BFA)</option>
+                                                        <option value="Industrial Design (MFA)">Industrial Design (MFA)</option>
+                                                        <option value="Interior Design (BFA">Interior Design (BFA</option>
+                                                        <option value="Medical Illustration (BFA)">Medical Illustration (BFA)</option>
+                                                        <option value="Motion Piction Science (BS)">Motion Piction Science (BS)</option>
+                                                        <option value="New Media Design (BFA)" selected>New Media Design (BFA)</option>
+                                                        <option value="New Media Interactive Development (BS)">New Media Interactive Development (BS)</option>
+                                                        <option value="Photo and Imaging Arts - Ad Photo (BFA)">Photo and Imaging Arts - Ad Photo (BFA)</option>
+                                                        <option value="Photo and Imaging Arts - Photo Journal (BFA)">Photo and Imaging Arts - Photo Journal (BFA)</option>
+                                                        <option value="Photo and Imaging Arts - Visual Media (BFA)">Photo and Imaging Arts - Visual Media (BFA)</option>
+                                                        <option value="Software Engineering (BS)">Software Engineering (BS)</option>
+                                                        <option value="Visual Communication Design (BFA)">Visual Communication Design (BFA)</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -153,16 +153,16 @@
                                                 <div class="form-group">
                                                     <label for="year">Year</label>
                                                     <select class="form-control" id="year">
-                                                        <option value="first">1st Year</option>
-                                                        <option value="second">2nd Year</option>
-                                                        <option value="third">3rd Year</option>
-                                                        <option value="fourth" selected>4th Year</option>
-                                                        <option value="fifth">5th Year</option>
-                                                        <option value="firstG">1st Year Grad</option>
-                                                        <option value="secondG">2nd Year Grad</option>
-                                                        <option value="thirdG">3rd Year Grad</option>
-                                                        <option value="fourthG">4th Year Grad</option>
-                                                        <option value="fifthG">5th Year Grad</option>
+                                                        <option value="1st Yea">1st Year</option>
+                                                        <option value="2nd Year">2nd Year</option>
+                                                        <option value="3rd Year">3rd Year</option>
+                                                        <option value="4th Year" selected>4th Year</option>
+                                                        <option value="5th Year">5th Year</option>
+                                                        <option value="1st Year Grad">1st Year Grad</option>
+                                                        <option value="2nd Year Grad">2nd Year Grad</option>
+                                                        <option value="3rd Year Grad">3rd Year Grad</option>
+                                                        <option value="4th Year Grad">4th Year Grad</option>
+                                                        <option value="5th Year Grad">4th Year Grad</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -231,44 +231,18 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                
-                                                <div class="row">
-                                                        <!-- preferred name -->
-                                                        <div class="col-xs-1 col-md col-lg">
-                                                            <h6>Preferred Name</h6>
-                                                            <p id="reviewFirstName"></p>
-                                                        </div>
-                                                        <!-- last name -->
-                                                        <div class="col-xs-1 col-md col-lg">
-                                                            <h6>Last Name</h6>
-                                                            <p id="reviewLastName"></p>
-                                                        </div>
+                                                <div class="card text-left" id="reviewCard">
+                                                    <div class="card-body" id="headerImg">
                                                     </div>
-                                                    <div class="row">
-                                                        <!-- email address -->
-                                                        <div class="col-xs-1 col-md col-lg">
-                                                            <h6>Email Address</h6>
-                                                            <p id="reviewEmail"></p>
-                                                        </div>
-                                                        <!-- portfolio link -->
-                                                        <div class="col-xs-1 col-md col-lg">
-                                                            <h6>Portfolio</h6>
-                                                            <a id="reviewLink" href=""></a>
-                                                        </div>
+                                                    <div class="card-footer">
+                                                    <p class="name-text" id="reviewName"></p> 
+                                                    <p class="major-text" id="reviewEdu">New Media Design, 4th Year</p>
                                                     </div>
-                                                    <div class="row">
-                                                        <!-- header image upload -->
-                                                        <div class="col-xs-1 col-md col-lg">
-                                                            <h6>Header Image</h6>
-                                                            <p>A placeholder image will be used if a header was not uploaded</p>
-                                                            <img id="reviewHeader" src="#" alt="your image" style="max-width: 258px; max-height: auto;">
-                                                        </div>
-                                                    </div>
-
+                                                </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                                <button type="submit" class="btn btn-primary" id="submitForm">Submit</button>
+                                                <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                                                <button type="submit" class="btn" id="submitForm">Submit</button>
                                             </div>
                                             <div id="message">
                                                     
@@ -278,17 +252,27 @@
                                     </div>
 
                                 </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-warning" type="button" id="back" disabled>Previous</button> <button class="btn btn-warning" type="button" id="next">Next</button>
-                    </form>
+                            </form>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PREVIOUS AND NEXT BUTTONS -->
+            <div class="row">
+                <div class="col text-left">
+                    <button class="btn" type="button" id="back" disabled>Previous</button> 
+                </div>
+
+                <div class="col text-right">
+                    <button class="btn" type="button" id="next">Next</button>
                 </div>
             </div>
 
             <!-- FOOTER -->
-            <div class="row justify-content-center">
+            <div class="row d-flex justify-content-center align-items-end">
                 <footer>
-                    <p>Having Trouble? Contact Professor Adam Smith: adam.smith@rit.edu</p>
+                    <p>Having Trouble? Contact Professor Adam Smith:  <span style="color: #F76902">adam.smith@rit.edu</span></p>
                 </footer>
             </div>
     </div>
@@ -356,8 +340,8 @@
                     var reader = new FileReader();
                     
                     reader.onload = function (e) {
-                        document.getElementById('imgPreview').src = e.target.result
-                        document.getElementById('reviewHeader').src = e.target.result;
+                        document.getElementById('imgPreview').src = e.target.result;
+                        document.getElementById('headerImg').css('background-image',`url(${e.target.result})`);;
                     }
                     
                     reader.readAsDataURL(input.files[0]);
@@ -378,12 +362,11 @@
                 const backBtn = document.getElementById('back');
 
                 if(nextBtn.innerText === 'Review') {
-                    document.getElementById('reviewFirstName').innerHTML = document.getElementById('firstName').value;
-                    document.getElementById('reviewLastName').innerHTML = document.getElementById('lastName').value; 
-                    document.getElementById('reviewEmail').innerHTML = document.getElementById('email').value;
+                    document.getElementById('reviewName').innerHTML = document.getElementById('firstName').value + ' ' + document.getElementById('lastName').value; 
+                    document.getElementById('reviewEdu').innerHTML = document.getElementById('major').value + ', ' + document.getElementById('year').value ;
 
-                    document.getElementById('reviewLink').href = 'http://' + document.getElementById("portfolio").value;
-                    document.getElementById('reviewLink').innerHTML = 'http://' + document.getElementById("portfolio").value;
+                    // document.getElementById('reviewLink').href = 'http://' + document.getElementById("portfolio").value;
+                    // document.getElementById('reviewLink').innerHTML = 'http://' + document.getElementById("portfolio").value;
 
                     $('#reviewModal').modal('show');
                 }
@@ -417,6 +400,40 @@
                  }, 1000);
             });
         });
+
+
+        // <div class="row">
+        //                                             <!-- preferred name -->
+        //                                             <div class="col-xs-1 col-md col-lg">
+        //                                                 <h6>Preferred Name</h6>
+        //                                                 <p id="reviewFirstName"></p>
+        //                                             </div>
+        //                                             <!-- last name -->
+        //                                             <div class="col-xs-1 col-md col-lg">
+        //                                                 <h6>Last Name</h6>
+        //                                                 <p id="reviewLastName"></p>
+        //                                             </div>
+        //                                         </div>
+        //                                         <div class="row">
+        //                                             <!-- email address -->
+        //                                             <div class="col-xs-1 col-md col-lg">
+        //                                                 <h6>Email Address</h6>
+        //                                                 <p id="reviewEmail"></p>
+        //                                             </div>
+        //                                             <!-- portfolio link -->
+        //                                             <div class="col-xs-1 col-md col-lg">
+        //                                                 <h6>Portfolio</h6>
+        //                                                 <a id="reviewLink" href=""></a>
+        //                                             </div>
+        //                                         </div>
+        //                                         <div class="row">
+        //                                             <!-- header image upload -->
+        //                                             <div class="col-xs-1 col-md col-lg">
+        //                                                 <h6>Header Image</h6>
+        //                                                 <p>A placeholder image will be used if a header was not uploaded</p>
+        //                                                 <img id="reviewHeader" src="#" alt="your image" style="max-width: 258px; max-height: auto;">
+        //                                             </div>
+        //                                         </div>
     </script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+
+body {
+    background-color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* page header */
+header {
+    text-align: center;
+    border-bottom: 1px #A2AAAD solid;
+
+    padding: 20px 20px 20px 20px;
+    width: 100vw;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+header p {
+    font-size: .8em;
+}
+
+/* card tabs */
+/* tab link */ 
+.nav-item .nav-link {
+    border: none;
+    color: black;
+    border-bottom: 4px #D0D3D4 solid;
+    width:100%;
+}
+
+/* active tab */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: 4px #F76902 solid;
+    margin: 0px;
+}
+
+/*main card */
+/*header where tabs are*/
+#formCard .card{
+    min-width: 60vw;
+    min-height: 400px;
+    margin: 50px 0px 10px 0px;
+}
+#formCard .card-header {
+    background-color: white;
+}
+
+/* next/previous buttons */
+#next, #submitForm {
+    background-color: #F76902;
+    color: white;
+}
+
+#back {
+    background-color: #D0D3D4;
+}
+
+/* footer */
+footer {
+    margin: 100px 0px 10px 0px;
+}
+
