@@ -10,6 +10,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
   <!--- normal stuff -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,6 +21,7 @@
     }
     #controls {
       padding-bottom: 16px;
+      margin-top: 16px;
     }
     #controls, #filters {
       display: flex;
@@ -53,8 +55,12 @@
       transition: all 0.3s;
     }
     .dropdown-menu {
-      width: 300px;
+      width: 500px;
       padding: 10px 15px 15px 15px;
+    }
+    .dropdown-menu > div {
+      display: flex;
+      flex-direction: column;
     }
     p {
       margin-bottom: 5px;
@@ -75,40 +81,146 @@
       </header>
     </div>
 
-    <hr>
-
     <!-- CONTROLS -->
     <div class="row">
       <div id="controls" class="col-12">
         <button class="btn" type="button" id="addPortfolioButton">Add Portfolio</button>
 
-        <!-- Filters -->
         <div id="filters">
+          <!-- Filter -->
           <div class="dropdown">
             <button class="btn dropdown-toggle" type="button" id="filterButton" data-toggle="dropdown">
               Filter
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <p><strong>Year</strong></p>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="firstYearCheck">
-                <label class="form-check-label" for="dropdownCheck">First</label>
+            <div id="filterDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div>
+                <p><strong>Major</strong></p>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="allMajorCheck">
+                  <label class="form-check-label" for="dropdownCheck"><strong>All</strong></label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="3dddCheck">
+                  <label class="form-check-label" for="dropdownCheck">3D Digital Design (BFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="advertCheck">
+                  <label class="form-check-label" for="dropdownCheck">Advert and Public Relations (BS)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="artScienceCheck">
+                  <label class="form-check-label" for="dropdownCheck">Applied Art and Sciences (BS)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="csCheck">
+                  <label class="form-check-label" for="dropdownCheck">Computer Science (BS)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="filmBFACheck">
+                  <label class="form-check-label" for="dropdownCheck">Film and Animation (BFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="filmMFACheck">
+                  <label class="form-check-label" for="dropdownCheck">Film and Animation (MFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="artStudioCheck">
+                  <label class="form-check-label" for="dropdownCheck">Fine Arts Studio (BFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="gddBSCheck">
+                  <label class="form-check-label" for="dropdownCheck">Game Design and Development (BS)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="gddMSCheck">
+                  <label class="form-check-label" for="dropdownCheck">Game Design and Development (MS)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="graphicDesignCheck">
+                  <label class="form-check-label" for="dropdownCheck">Graphic Design (BFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="hccCheck">
+                  <label class="form-check-label" for="dropdownCheck">Human-Centered Computing (BS)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="illustrationCheck">
+                  <label class="form-check-label" for="dropdownCheck">Illustration (BFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="industrialDesignBFACheck">
+                  <label class="form-check-label" for="dropdownCheck">Industrial Design (BFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="industrialDesignMFACheck">
+                  <label class="form-check-label" for="dropdownCheck">Industrial Design (MFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="interiorDesignCheck">
+                  <label class="form-check-label" for="dropdownCheck">Interior Design (BFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="medIllustrationCheck">
+                  <label class="form-check-label" for="dropdownCheck">Medical Illustration (BFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="motionPictureScienceCheck">
+                  <label class="form-check-label" for="dropdownCheck">Motion Piction Science (BS)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="nmdCheck">
+                  <label class="form-check-label" for="dropdownCheck">New Media Design (BFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="nmidCheck">
+                  <label class="form-check-label" for="dropdownCheck">New Media Interactive Development (BS)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="adPhotoCheck">
+                  <label class="form-check-label" for="dropdownCheck">Photo and Imaging Arts - Ad Photo (BFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="photoJournalCheck">
+                  <label class="form-check-label" for="dropdownCheck">Photo and Imaging Arts - Photo Journal (BFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="visualMediaCheck">
+                  <label class="form-check-label" for="dropdownCheck">Photo and Imaging Arts - Visual Media (BFA)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="visualMediaCheck">
+                  <label class="form-check-label" for="seCheck">Software Engineering (BS)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="visCommCheck">
+                  <label class="form-check-label" for="dropdownCheck">Visual Communication Design (BFA)</label>
+                </div>
               </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="secondYearCheck">
-                <label class="form-check-label" for="dropdownCheck">Second</label>
+
+              <div>
+                <p><strong>Year</strong></p>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="firstYearCheck">
+                  <label class="form-check-label" for="dropdownCheck">First</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="secondYearCheck">
+                  <label class="form-check-label" for="dropdownCheck">Second</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="thirdYearCheck">
+                  <label class="form-check-label" for="dropdownCheck">Third</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="thirdYearCheck">
+                  <label class="form-check-label" for="dropdownCheck">Fourth</label>
+                </div>
               </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="thirdYearCheck">
-                <label class="form-check-label" for="dropdownCheck">Third</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="thirdYearCheck">
-                <label class="form-check-label" for="dropdownCheck">Fourth</label>
-              </div>
+              
             </div>
           </div>
     
+          <!-- Sort By -->
           <div class="dropdown">
             <button class="btn dropdown-toggle" type="button" id="filterButton" data-toggle="dropdown">
               Sort By
