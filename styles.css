@@ -272,11 +272,16 @@ footer {
     left: 75px !important;
     overflow-y: scroll;
     display: flex;
+    justify-content: space-around;
 }
 
 .dropdown-menu > div {
     display: flex;
     flex-direction: column;
+}
+
+.dropdown-menu > div:not(:last-child) {
+  margin-right: 15px;
 }
 
 .dropdown-heading {
@@ -287,10 +292,55 @@ footer {
   margin-top: 10px;
 }
 
+.skills-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill {
+  text-decoration: underline;
+}
+
+/* Other styles */
 p {
     margin-bottom: 5px;
 }
 
 p:last-child {
     margin-bottom: 0;
+}
+
+/* Media queries for gallery */
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  #filters {
+    flex-direction: column;
+  }
+  .dropdown-menu.show {
+    flex-direction: column;
+    display: inherit;
+  }
+  .mobile-dropdown-heading {
+    margin-top: 15px;
+  }
+  .skills-section {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  #controls {
+    flex-direction: column;
+  }
+  #controls button {
+    width: 100%;
+  }
+  button:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
