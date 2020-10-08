@@ -262,18 +262,28 @@ footer {
     transition: all 0.3s;
 }
 
-.dropdown-menu {
+.dropdown-menu.show {
     padding: 10px 15px 15px 15px;
+    height: 70vh;
+    width: calc(100% - 150px);
     position: fixed !important;
-    top: 135px !important;
-    left: 0 !important;
-    height: 300px;
+    top: 170px !important;
+    left: 75px !important;
     overflow-y: scroll;
+    display: flex;
 }
 
 .dropdown-menu > div {
     display: flex;
     flex-direction: column;
+}
+
+.dropdown-heading {
+  font-size: 24px;
+}
+
+.dropdown-section {
+  margin-top: 10px;
 }
 
 p {

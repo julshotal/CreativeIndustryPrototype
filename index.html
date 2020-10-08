@@ -40,12 +40,12 @@
         <div id="filters">
           <!-- Filter -->
           <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="filterButton" data-toggle="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="filterButton" data-toggle="dropdown" data-display="static">
               Filter
             </button>
-            <div id="filterDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div id="filterDropdown" class="dropdown-menu">
               <div>
-                <p><strong>Major</strong></p>
+                <p class="dropdown-heading"><strong>Major</strong></p>
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" id="allMajorCheck">
                   <label class="form-check-label" for="dropdownCheck"><strong>All</strong></label>
@@ -149,7 +149,8 @@
               </div>
 
               <div>
-                <p><strong>Year</strong></p>
+                <p class="dropdown-heading"><strong>Year</strong></p>
+                <p><strong>Undergraduate</strong></p>
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" id="firstYearCheck">
                   <label class="form-check-label" for="dropdownCheck">First</label>
@@ -166,6 +167,15 @@
                   <input type="checkbox" class="form-check-input" id="thirdYearCheck">
                   <label class="form-check-label" for="dropdownCheck">Fourth</label>
                 </div>
+                <p class="dropdown-section"><strong>Graduate</strong></p>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="gradFirstYearCheck">
+                  <label class="form-check-label" for="dropdownCheck">First</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="gradSecondYearCheck">
+                  <label class="form-check-label" for="dropdownCheck">Second</label>
+                </div>
               </div>
               
             </div>
@@ -173,11 +183,35 @@
     
           <!-- Sort By -->
           <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="filterButton" data-toggle="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="filterButton" data-toggle="dropdown" data-display="static">
               Sort By
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    
+            <div id="sortByDropdown" class="dropdown-menu">
+              <div>
+                <p class="dropdown-heading"><strong>Name</strong></p>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="nameAlphabeticalCheck">
+                  <label class="form-check-label" for="dropdownCheck"><strong>Alphabetical</strong></label>
+                </div>
+                <p class="dropdown-section"><strong>First Name</strong></p>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="firstNameAscendingCheck">
+                  <label class="form-check-label" for="dropdownCheck">Ascending</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="firstNameDescendingCheck">
+                  <label class="form-check-label" for="dropdownCheck">Descending</label>
+                </div>
+                <p class="dropdown-section"><strong>Last Name</strong></p>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="lastNameAscendingCheck">
+                  <label class="form-check-label" for="dropdownCheck">Ascending</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="lastNameDescendingCheck">
+                  <label class="form-check-label" for="dropdownCheck">Descending</label>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -492,11 +526,6 @@
         for(const checkbox of checkboxes) {
           checkbox.checked = false;
         }
-      });
-
-      // Sizes filter and sort by dropdowns when opened
-      $('#filterButton').on('click', (e) => {
-        $().width("100vw");
       });
 
     });
