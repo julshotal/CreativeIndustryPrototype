@@ -15,7 +15,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Creative Industry Day</title>
-  
+  <style>
+    header {
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 
 <!-- CONTENT -->
@@ -277,15 +281,9 @@
             <a class="portfolio-website" href='https://middleton.work'>https://middleton.work</a>
             <a class="student-email" href='blm9096@rit.edu'>blm9096@rit.edu</a>
           </div>
-          </div>
         </div>
       </div>
-        
-        
-        <!--- DUPLICATED CARDS FOR DISPLAY PURPOSES-->
-        <!-- CARD -->
-       <!-- GALLERY -->
-    <div id="gallery" class="row justify-content-center">
+  
       <!-- CARD -->
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card text-left PHpurple">
@@ -475,16 +473,11 @@
             <a class="portfolio-website" href='https://middleton.work'>https://middleton.work</a>
             <a class="student-email" href='blm9096@rit.edu'>blm9096@rit.edu</a>
           </div>
-          </div>
         </div>
-        
-        
-            </div>
-     <!-- GALLERY END -->
-
-
+      </div>  
     </div>
-
+    <!-- GALLERY END -->
+  </div>
   <!-- CODE -->
   <script>
     $(document).ready(() => {
@@ -499,6 +492,11 @@
         for(const checkbox of checkboxes) {
           checkbox.checked = false;
         }
+      });
+
+      // Sizes filter and sort by dropdowns when opened
+      $('#filterButton').on('click', (e) => {
+        $().width("100vw");
       });
 
     });
