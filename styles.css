@@ -262,6 +262,7 @@ footer {
     transition: all 0.3s;
 }
 
+/* Filter & sort by dropdown styles */
 .dropdown-menu.show {
     padding: 10px 15px 15px 15px;
     height: 70vh;
